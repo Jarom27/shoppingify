@@ -1,15 +1,15 @@
-import React from 'react'
-import Advice from './Advice'
+import { useContext } from 'react'
+import ShoppingView from './ShoppingView'
+import ListContext from '../context/ListContext';
+import ItemForm from './ItemForm';
 
 export default function ListView() {
-  return (
-    <aside className='h-screen w-1/2 flex flex-col'>
-        <div className='bg-sand h-full py-10'>
-           <Advice></Advice>
-        </div>
-        <div>
-            
-        </div>
-    </aside>
-  )
+    const {view} = useContext(ListContext);
+    console.log(view)
+    return (
+      <aside className='h-screen w-1/2 flex flex-col'>
+          {view == "shopping" ? <ShoppingView></ShoppingView> : ""}
+          {view == "item-form" ? <ItemForm></ItemForm> : ""}
+      </aside>
+    )
 }
