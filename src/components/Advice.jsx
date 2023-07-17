@@ -1,8 +1,8 @@
 export default function Advice() {
   return (
-    <div className="bg-wine rounded-md flex p-4 w-80">
-        <div className="block relative h-10 w-10">
-            <div className="absolute bottom-2 left-0 z-10 w-20 ">
+    <div className="bg-wine rounded-md flex p-4 w-80 py-6 gap-x-4">
+        <div className="block relative h-10 w-20">
+            <div className="absolute bottom-[-50px] right-2 z-10 w-20 ">
                 <img className="" src="../assets/wine.svg" alt="Bottle of Wine image" />
             </div>
         </div>
