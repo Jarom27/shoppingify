@@ -1,4 +1,5 @@
 import ItemsView from "./components/ItemsView"
+import ListView from "./components/ListView"
 import Sidebar from "./components/Sidebar"
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
       <div className="flex">
         <Sidebar></Sidebar>
         <ItemsView></ItemsView>
+        <ListView></ListView>
       </div>
     </>
   )

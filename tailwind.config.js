@@ -5,9 +5,15 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily:{
+      "sans" : "Quicksand"
+    },
     extend: {
       colors: {
-        "orange-primary" : "f9a109"
+        "orange-primary" : "#f9a109",
+        "sand" : "#FFF0DE",
+        "wine" : "#80485B",
+        "contrast" : "#fafafe"
       },
     },
   },
