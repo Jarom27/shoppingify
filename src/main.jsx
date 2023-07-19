@@ -33,7 +33,11 @@ const router = createBrowserRouter([
       path: "/history",
       element: <History></History>,
       children:[
-        
+        {
+          path: "/history",
+          loader:  getShoppingList,
+          element: <ShoppingView></ShoppingView>
+        }
       ]
 
 

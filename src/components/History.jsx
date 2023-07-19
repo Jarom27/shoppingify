@@ -1,3 +1,4 @@
+import HistoryView from "./HistoryView";
 import ListView from "./ListView";
 import Sidebar from "./Sidebar";
 
@@ -11,6 +12,7 @@ export default function History() {
   return (
     <div className="flex">
         <Sidebar></Sidebar>
+        <HistoryView></HistoryView>
         <ListView></ListView>
       </div>
   )
